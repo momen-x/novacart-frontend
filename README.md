@@ -61,9 +61,27 @@ Product and category deletion methods and hooks exist, but no delete UI currentl
 - Submit the current order through `POST /orders`, show a success notification, and return home.
 - View user order history with item images, quantities, totals, and customer details.
 
-**Payment status:** the payment screen includes Stripe branding and a demonstration video at `public/assets/payment-ex.mp4`. Its button currently calls the order-completion endpoint; there is no Stripe SDK, checkout-session request, or Stripe redirect in this frontend. Real payment processing is not established by this repository and remains integration work.
+### 💳 Payment Demonstration
 
-Cart removal has an API method and hook, but the visible trash button has no handler. Editing quantities inside the cart is not implemented. Order history displays a fixed “Delivered” badge rather than deriving its label from the order status.
+NovaCart includes a payment step as part of the portfolio checkout scenario.
+
+The current frontend does **not process real Stripe payments**. The payment page contains a demonstration video located at:
+
+```text
+public/assets/payment-ex.mp4
+
+## 🎯 Project Scope
+
+NovaCart is a **portfolio-focused full-stack project**, not a production e-commerce product intended for real commercial operation.
+
+The application uses an e-commerce domain to demonstrate practical frontend and backend engineering concepts such as authentication, product and category management, cart state, orders, profile management, API integration, file uploads, validation, and deployment.
+
+Because the project is designed primarily as a technical showcase, some workflows intentionally prioritize demonstrating implementation patterns over reproducing every business rule of a real-world online store.
+
+For example, certain checkout, order, administration, and payment scenarios may be simplified or structured differently from what would normally be required in a production commerce system.
+
+These decisions are part of the project's portfolio scope rather than claims that the application represents a complete commercial e-commerce solution.
+
 
 ### Dashboard and UI
 
